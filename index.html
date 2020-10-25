@@ -11,6 +11,7 @@
   <title>Ishpulatov Bekjon's portfolio</title>
 </head>
 <body>
+    <!--LOADER-->
   <div class="loading">
     <div class="main">
       <div class="dot">
@@ -20,13 +21,15 @@
       </div>
     </div>
   </div>
+    <!--LOADER END-->
   
+    <!--NAVBAR-->
   <nav id="nav" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
   <!-- Brand -->
   <a class="navbar-brand" href="#">Bekjonweb</a>
 
   <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button onclick="navBack()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   
@@ -45,7 +48,9 @@
     </ul>
   </div>
 </nav>
+    <!--NAVBAR END-->
   
+    <!--HOME-->
   <section class="home">
     <div class="container">
       <div class="row">
@@ -57,13 +62,15 @@
       </div>
     </div>
   </section>
+    <!--HOME END-->
   
+    <!--SERVICES-->
   <section id="services" class="services">
     <div class="container">
       <h1>Services</h1>
       <p class="text-center"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, voluptatem.</em></p>
       <div class="row">
-        <div class="col-md-4" data-aos="flip-right" data-aos-duration="1000">
+        <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <div class="card-header">
               <i class="fas fa-lock"></i>
             </div>
@@ -79,7 +86,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ipsa quasi voluptate, laudantium incidunt amet dolorem alias magni quia sequi consequuntur itaque unde! Ipsum, esse.</p>
             </div>
         </div>
-        <div class="col-md-4" data-aos="flip-left" data-aos-duration="1000">
+        <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000">
             <div class="card-header">
               <i class="fas fa-shopping-cart"></i>
             </div>
@@ -90,7 +97,9 @@
       </div>
     </div>
   </section>
+    <!--SERVICES END-->
   
+    <!--PORTFOLIO-->
   <section id="portfolio" class="portfolio">
     <div class="container">
       <h1 class="text-center">Portfolio</h1>
@@ -107,7 +116,7 @@
             </div>
           </div>
         </div> 
-        <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-duration="950">
+       <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-duration="950">
           <div class="card">
             <div class="card-header">
               <div class="overlay">
@@ -118,40 +127,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4" data-aos="flip-down" data-aos-duration="950">
-          <div class="card">
-            <div class="card-header">
-              <div class="overlay">
-                <h3 class="text-center">Project name</h3>
-                <p class="text-center">Lorem ipsum dolor sit.</p>
-              </div>
-             <img class="w-100" src="./images/portfolio/img.jpeg" alt="#">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card">
-            <div class="card-header">
-              <div class="overlay">
-                <h3 class="text-center">Project name</h3>
-                <p class="text-center">Lorem ipsum dolor sit.</p>
-              </div>
-             <img class="w-100" src="./images/portfolio/img.jpeg" alt="#">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="card">
-            <div class="card-header">
-              <div class="overlay">
-                <h3 class="text-center">Project name</h3>
-                <p class="text-center">Lorem ipsum dolor sit.</p>
-              </div>
-             <img class="w-100" src="./images/portfolio/img.jpeg" alt="#">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
+       <div class="col-sm-6 col-md-4" data-aos="flip-down" data-aos-duration="950">
           <div class="card">
             <div class="card-header">
               <div class="overlay">
@@ -163,21 +139,58 @@
           </div>
         </div>
       </div>
-    </div> 
+        <div class="row">
+          <div class="col-sm-6 col-md-4" data-aos="flip-down" data-aos-duration="950">
+          <div class="card">
+            <div class="card-header">
+              <div class="overlay">
+                <h3 class="text-center">Project name</h3>
+                <p class="text-center">Lorem ipsum dolor sit.</p>
+              </div>
+             <img class="w-100" src="./images/portfolio/img.jpeg" alt="#">
+            </div>
+          </div>
+        </div>
+          <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-duration="950">
+          <div class="card">
+            <div class="card-header">
+              <div class="overlay">
+                <h3 class="text-center">Project name</h3>
+                <p class="text-center">Lorem ipsum dolor sit.</p>
+              </div>
+             <img class="w-100" src="./images/portfolio/img.jpeg" alt="#">
+            </div>
+          </div>
+        </div>
+          <div class="col-sm-6 col-md-4" data-aos="flip-up" data-aos-duration="950">
+          <div class="card">
+            <div class="card-header">
+              <div class="overlay">
+                <h3 class="text-center">Project name</h3>
+                <p class="text-center">Lorem ipsum dolor sit.</p>
+              </div>
+             <img class="w-100" src="./images/portfolio/img.jpeg" alt="#">
+            </div>
+          </div>
+        </div>
+        </div>
+     </div> 
   </section>
-  
+    <!--PORTFOLIO END-->
+    
+    <!--ABOUT-->
   <section id="about" class="about">
     <div class="container">
       <h1 class="text-center mt-5">About</h1>
       <p class="text-center"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, voluptatem.</em></p>
       <div class="row">
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-6" data-aos="fade-right" data-aos-duration="1000">
           <img class="w-100" src="./images/about/me.jpg" alt="My picture">
         </div>
         <div class="col-md-4 col-sm-6">
            <h3 class="text-center">Ishpulatov Bekjon</h3>
            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, modi aspernatur officia reprehenderit sequi tenetur.</p>
-          <ul class="main">
+      <ul class="main">
         <li class="cardone">
           <span class="firstdSpan">
             <i class="fas fa-user"></i>
@@ -188,7 +201,7 @@
           </span>
         </li>
       </ul>
-          <ul class="main">
+      <ul class="main">
         <li class="cardtwo">
           <span class="firstdSpan">
             <i class="fas fa-calendar-alt"></i>
@@ -199,7 +212,7 @@
           </span>
         </li>
       </ul>
-          <ul class="main">
+      <ul class="main">
         <li class="cardthree">
           <span class="firstdSpan">
             <i class="fas fa-map-marker-alt"></i>
@@ -214,7 +227,9 @@
       </div>
     </div>
   </section>
+  <!--ABOUT END-->
   
+  <!--FOOTER-->
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -232,6 +247,7 @@
       </div>
     </div>
   </footer>
+  <!--FOOTER END-->
   
  <script src="./bootstrap/js/jquery-3.3.1.slim.min.js"></script> 
  <script src="./bootstrap/js/popper.min.js"></script> 
